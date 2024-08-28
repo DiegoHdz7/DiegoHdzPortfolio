@@ -11,8 +11,16 @@ export type Service = {
     }[];
   } ;
 
-export type Services = [{ category:string,
+export type ServicesContent = [{ category:string,
   services:Service[]}
  
 ] | [null]
+
+export type AboutMeContent = {
+  introduction:string,
+  values:string,
+  goals:string,
+  hobbies:string,
+  mission:string
+} | null;
   

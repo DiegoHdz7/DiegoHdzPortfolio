@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Service, Services } from '../models/models';
+import { Service, ServicesContent } from '../models/models';
 import { NgFor } from '@angular/common';
 import { CommonModule } from '@angular/common';
 
