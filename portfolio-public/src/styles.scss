@@ -2,6 +2,36 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
+// Define your custom color variables
+$primary: rgb(129, 77, 255);   // Neon purple
+$secondary: rgb(255, 70, 173); // Neon pink
+$success: rgb(0, 255, 85);     // Electric green
+$info: rgb(0, 255, 255);       // Neon cyan
+$warning: rgb(255, 153, 0);    // Neon orange
+$danger: rgb(255, 20, 147);    // Bright red
+$light: rgb(255, 255, 255);       // Dark gray
+$dark: rgb(0, 0, 0);           // Black
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.bg-color-body {
+    background: linear-gradient(90deg, $secondary, $primary);
+    background-size: 200% 100%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+
 
 
 

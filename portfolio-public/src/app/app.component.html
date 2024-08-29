@@ -1,11 +1,16 @@
-<app-navbar></app-navbar>
-<div class="container">
-    <div class="card hero-card text-center">
-      <div class="card-body">
-        <router-outlet></router-outlet>
+<body class="d-flex flex-column min-vh-100 bg-color-body">
+  <app-navbar></app-navbar>
+  <main class="flex-fill">
+    <div class="container">
+      <div class="card hero-card text-center my-5">
+        <div class="card-body">
+          <router-outlet></router-outlet>
+        </div>
       </div>
     </div>
-</div>
-<app-footer></app-footer>
+  </main>
+  <app-footer></app-footer>
+</body>
+
 
 
