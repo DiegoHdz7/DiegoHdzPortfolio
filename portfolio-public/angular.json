@@ -51,7 +51,9 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "outputPath": "dist/portfolio-public",
+               "baseHref": "/DiegoHdzPortfolio/"
             },
             "development": {
               "optimization": false,

@@ -1,0 +1,31 @@
+// $body-bg: rgb(248, 249, 250);      // Light grey for a clean, modern background
+// $body-color: rgb(33, 37, 41);      // Dark grey for body text for good readability
+// $primary: rgb(52, 152, 219);       // Bright blue for primary elements to give a techy feel
+// $secondary: rgb(231, 76, 60);      // Vibrant red for secondary elements to create contrast
+// $tertiary: rgb(41, 128, 185);      // Darker blue for tertiary elements to complement the primary color
+// $accent: rgb(26, 188, 156);        // Teal accent for subtle highlights
+// $muted: rgb(108, 117, 125);        // Muted grey for less prominent text
+
+// _custom-theme.scss
+
+// Define your custom color variables
+$primary: rgb(129, 77, 255);   // Neon purple
+$secondary: rgb(255, 70, 173); // Neon pink
+$success: rgb(0, 255, 85);     // Electric green
+$info: rgb(0, 255, 255);       // Neon cyan
+$warning: rgb(255, 153, 0);    // Neon orange
+$danger: rgb(255, 20, 147);    // Bright red
+$light: rgb(255, 255, 255);       // Dark gray
+$dark: rgb(0, 0, 0);           // Black
+
+// Override Bootstrap's default theme colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
