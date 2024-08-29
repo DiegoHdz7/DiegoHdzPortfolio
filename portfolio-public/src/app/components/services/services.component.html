@@ -6,7 +6,7 @@
 
     <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button card-btn-color text-light" type="button" data-bs-toggle="collapse"
                 [attr.data-bs-target]="'#category' + 0" aria-expanded="true" [attr.aria-controls]="'category'+0">
                 {{categories[0]}}
             </button>
@@ -37,7 +37,7 @@
     <div *ngFor="let category of categories |slice:1; let i = index ">
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed card-btn-color text-light" type="button" data-bs-toggle="collapse"
                 [attr.data-bs-target]="'#category' + (i+1)" aria-expanded="true" [attr.aria-controls]="'category'+(i+1)">
                     {{category}}
                 </button>

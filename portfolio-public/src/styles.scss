@@ -11,6 +11,8 @@ $warning: rgb(255, 153, 0);    // Neon orange
 $danger: rgb(255, 20, 147);    // Bright red
 $light: rgb(255, 255, 255);       // Dark gray
 $dark: rgb(0, 0, 0);           // Black
+$main-card:#331E36;
+$test-color:#331E36;
 
 
 @keyframes gradientAnimation {
@@ -29,6 +31,23 @@ $dark: rgb(0, 0, 0);           // Black
     background: linear-gradient(90deg, $secondary, $primary);
     background-size: 200% 100%;
     animation: gradientAnimation 5s ease infinite;
+}
+
+.test-color{
+    background-color: $test-color;
+}
+
+.main-card-color{
+    background-color:$main-card ;
+}
+
+
+.card-btn-color{
+    background-color: $secondary;
+}
+
+.card-body-color{
+    background-color: $primary;
 }
 
 
