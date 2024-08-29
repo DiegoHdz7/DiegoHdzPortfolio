@@ -20,6 +20,11 @@
             "outputPath": "dist/portfolio-public",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            },
             "polyfills": [
               "zone.js"
             ],
@@ -51,7 +56,9 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "outputPath": "dist/portfolio-public",
+               "baseHref": "/DiegoHdzPortfolio/"
             },
             "development": {
               "optimization": false,

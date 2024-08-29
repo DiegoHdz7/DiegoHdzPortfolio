@@ -1,13 +1,18 @@
-<div class="accordion" id="accordionExample">
-    <div class="accordion-item" *ngFor="let category of categories; let i = index">
+<h2>SERVICES</h2>
+<p>
+    With experience in software development and engineering, I feel confident to provide these services.
+</p>
+<div class="accordion" id="categories-accordion">
+
+    <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button" type="button" [attr.data-bs-toggle]="'collapse'"
-                [attr.data-bs-target]="'#collapse' + i" aria-expanded="true" [attr.aria-controls]="'collapse' + i">
-                {{ category }}
+            <button class="accordion-button card-btn-color text-light" type="button" data-bs-toggle="collapse"
+                [attr.data-bs-target]="'#category' + 0" aria-expanded="true" [attr.aria-controls]="'category'+0">
+                {{categories[0]}}
             </button>
         </h2>
-        <div [id]="'collapse' + i" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body" *ngFor="let service of getServicesByCategory(category)">
+        <div [id]="'category' + 0" class="accordion-collapse collapse show" data-bs-parent="#categories-accordion">
+            <div class="accordion-body" *ngFor="let service of getServicesByCategory(categories[0])">
 
                 <div class="card text-start">
                     <div class="card-body">
@@ -28,4 +33,43 @@
             </div>
         </div>
     </div>
+
+    <div *ngFor="let category of categories |slice:1; let i = index ">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed card-btn-color text-light" type="button" data-bs-toggle="collapse"
+                [attr.data-bs-target]="'#category' + (i+1)" aria-expanded="true" [attr.aria-controls]="'category'+(i+1)">
+                    {{category}}
+                </button>
+            </h2>
+            <div [id]="'category' + (i+1)" class="accordion-collapse collapse" data-bs-parent="#categories-accordion">
+                <div class="accordion-body" *ngFor="let service of getServicesByCategory(category)">
+
+                    <div class="card text-start">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>{{service.name}}</strong></h5>
+                            <p class="card-text">{{service.description}}</p>
+                            <p> <strong>Technologies:</strong> {{service.technologies}}</p>
+    
+                            <div *ngIf="service.projectLinks.length>0">
+                                <p> <strong>Links to my projects: </strong></p>
+                                <div *ngFor="let link of service.projectLinks">
+                                    <a href="{{link.url}}" class="card-link">{{link.title}}</a>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
 </div>

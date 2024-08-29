@@ -1,0 +1,24 @@
+
+
+// Define your custom color variables
+$primary: rgb(93, 21, 141); //rgb(129, 77, 255);   // Neon purple
+$secondary: rgb(255, 70, 173); // Neon pink
+$success: rgb(0, 255, 85);     // Electric green
+$info: rgb(0, 255, 255);       // Neon cyan
+$warning: rgb(255, 153, 0);    // Neon orange
+$danger: rgb(255, 20, 147);    // Bright red
+$light: rgb(255, 255, 255);       // Dark gray
+$dark: rgb(0, 0, 0);           // Black
+
+
+// Override Bootstrap's default theme colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);

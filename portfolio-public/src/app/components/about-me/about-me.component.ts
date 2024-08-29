@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AboutMeContent } from '../models/models';
+import { ThemeService } from '../../services/theme-service.service';
 
 @Component({
   selector: 'app-about-me',
@@ -19,6 +20,10 @@ export class AboutMeComponent {
     hobbies:"  <p>Outside of work, I enjoy exploring new restaurants, cycling, and going to the movies. I am also a big fan of anime, which allows me to unwind and draw inspiration from different storytelling techniques.</p>",
     mission:" <p>My mission is to create impactful software solutions that improve people's lives. I am committed to leveraging my skills and passion for technology to build systems that are not only functional but also user-friendly and efficient. I strive to be a part of projects that challenge me and enable me to contribute meaningfully to the world of software development.</p>"
         
+
+  }
+
+  constructor(private themeService:ThemeService){
 
   }
 
