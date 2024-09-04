@@ -12,9 +12,9 @@
             </button>
         </h2>
         <div [id]="'category' + 0" class="accordion-collapse collapse show" data-bs-parent="#categories-accordion">
-            <div class="accordion-body" *ngFor="let service of getServicesByCategory(categories[0])">
+            <div class="accordion-body bg-primary" *ngFor="let service of getServicesByCategory(categories[0])">
 
-                <div class="card text-start">
+                <div class="card text-start main-card-color text-light">
                     <div class="card-body">
                         <h5 class="card-title"><strong>{{service.name}}</strong></h5>
                         <p class="card-text">{{service.description}}</p>
@@ -23,7 +23,7 @@
                         <div *ngIf="service.projectLinks.length>0">
                             <p> <strong>Links to my projects: </strong></p>
                             <div *ngFor="let link of service.projectLinks">
-                                <a href="{{link.url}}" class="card-link">{{link.title}}</a>
+                                <a href="{{link.url}}" class="card-link text-info">{{link.title}}</a>
                             </div>
 
                         </div>
@@ -43,9 +43,9 @@
                 </button>
             </h2>
             <div [id]="'category' + (i+1)" class="accordion-collapse collapse" data-bs-parent="#categories-accordion">
-                <div class="accordion-body" *ngFor="let service of getServicesByCategory(category)">
+                <div class="accordion-body bg-primary" *ngFor="let service of getServicesByCategory(category)">
 
-                    <div class="card text-start">
+                    <div class="card text-start main-card-color text-light">
                         <div class="card-body">
                             <h5 class="card-title"><strong>{{service.name}}</strong></h5>
                             <p class="card-text">{{service.description}}</p>
@@ -54,7 +54,7 @@
                             <div *ngIf="service.projectLinks.length>0">
                                 <p> <strong>Links to my projects: </strong></p>
                                 <div *ngFor="let link of service.projectLinks">
-                                    <a href="{{link.url}}" class="card-link">{{link.title}}</a>
+                                    <a href="{{link.url}}" class="card-link text-info">{{link.title}}</a>
                                 </div>
     
                             </div>

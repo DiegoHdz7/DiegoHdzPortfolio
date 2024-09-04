@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  headshotPath:string = "assets/images/Headshot.png";
+  headshotPath:string = "assets/images/Headshot-2.jpg";
   summaryHeaderContent:string = "Hi, I'm Diego"
   briefSummaryContent:string = " I am a passionate software developer with expertise in full-stack development and data engineering. I specialize in creating innovative solutions and driving projects to success through collaboration and technical excellence."
 
